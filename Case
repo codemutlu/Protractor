@@ -1,0 +1,57 @@
+
+rotate_extrude()
+    translate([75, 0])
+       square([2,7.3]);
+
+rotate_extrude()
+    translate([72, 0])
+        square([3,5.3]);
+       
+difference(){  
+
+   difference(){  
+     rotate_extrude()
+       translate([0, 0])
+         square([75,2]);
+       
+     rotate_extrude(angle = 185)
+       translate([59.5, 0])
+         square([4,3]);
+  }
+
+   rotate_extrude()
+     translate([0, -10, 0])
+       square([1.5,20]);
+       
+}
+       
+ 
+difference(){  
+
+   rotate_extrude()
+     translate([0, 0])
+        square([5,9.5]);
+       
+   rotate_extrude()
+     translate([0, -10, 0])
+        square([1.5,20]);
+       
+}
+
+
+       
+rotate_extrude()
+    translate([5, 0])
+       square([2,2.5]);
+       
+rotate_extrude()
+    translate([25, 0])
+       square([2,2.5]);
+       
+rotate_extrude()
+    translate([62.5, 0])
+        square([2,2.5]);
+        
+rotate_extrude()
+    translate([57.5, 0])
+        square([2,2.5]);
